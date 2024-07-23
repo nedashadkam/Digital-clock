@@ -1,0 +1,72 @@
+<!-- ساعت دیجیتال -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        div {
+            background-color: #000048;
+            width: 8%;
+            padding: 3%;
+            color: #e1e1e1;
+            border: 2px solid #e1e1e1;
+            outline: 1px solid #000048;
+            border-radius: 5px;
+            margin-left: 43%;
+            margin-top: 35vh;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body onload="setInterval(showTime, 1000)">
+
+    <div>
+
+        <span id="demo"></span>
+
+    </div>
+
+    <script>
+
+        function showTime() {
+
+            document.getElementById("demo").innerHTML = new Date().toLocaleTimeString();
+
+            // let date = new Date();
+            // let h = date.getHours();
+            // let m = date.getMinutes();
+            // let s = date.getSeconds();
+            // let session = "AM";
+
+            // if (h == 0) {
+            //     h = 12;
+            // }
+            // if (h > 12) {
+            //     h = h - 12;
+            //     session = "PM";
+            // }
+            // if (h < 10) {
+            //     h = "0" + h;
+            // }
+
+            // if (m < 10) {
+            //     m = "0" + m;
+            // }
+
+            // if (s < 10) {
+            //     s = "0" + s;
+            // }
+
+            // document.getElementById("demo").innerHTML = h + " : " + m + " : " + s + " " + session;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
